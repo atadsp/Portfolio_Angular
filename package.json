@@ -10,6 +10,7 @@
   "author": "Christopher Beckman",
   "license": "",
   "dependencies": {
+    "express": "^4.14.0",
     "lodash": "^4.15.0"
   }
 }
