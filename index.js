@@ -6,20 +6,21 @@
 // app.use(express.static(__dirname + '/public'));
 
 // app.listen(port, function(){
-// 	console.log('listening');
+//  console.log('listening');
 // });
 
 
 var express = require('express');
-var path = require('path');
-var port = process.env.PORT || 8080;
-var app = express();
+var app		= express();
+var http	= require('http').Server(app);
 
+//Tell node where to find static files
 app.use(express.static(__dirname + '/public'));
 
-app.get('*', (req, res)=> {
-	res.sendFile(path.resolve(__dirname, 'index.html'));
+app.get('/', function(req, res){
+	res.sendFile(__dirname + '/index.html');
 });
 
-app.listen(port);
-console.log("Server Started");
+http.listen(process.env.PORT || 3000, function(){
+	console.log('listening on *:3000');
+});
