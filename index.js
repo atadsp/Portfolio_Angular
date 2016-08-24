@@ -37,11 +37,6 @@ var port = 5000;
 
 app.use(express.static('public'));
 
-app.get('/', function(req, res){
-    res.send("hello world");
-});
-
-
 app.listen(process.env.PORT || port, function(err){
     console.log('running server on port ' + port);
 });
