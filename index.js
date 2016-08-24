@@ -10,43 +10,38 @@
 // });
 
 
-var express = require('express');
-var app		= express();
-var http	= require('http').Server(app);
+// var express = require('express');
+// var app		= express();
+// var http	= require('http').Server(app);
 
-//Tell node where to find static files
+// //Tell node where to find static files
+// app.use(express.static(__dirname + '/public'));
+
+// app.get('/', function(req, res){
+// 	res.sendFile(__dirname + '/index.html');
+// });
+
+// http.listen(process.env.PORT || port, function(){
+// 	console.log('listening on *:3000');
+// });
+
+
+
+
+
+var express = require('express');
+
+var app = express();
+
+var port = 5000;
+
 app.use(express.static('public'));
 
 app.get('/', function(req, res){
-	res.sendFile(__dirname + '/index.html');
-});
-
-http.listen(process.env.PORT || port, function(){
-	console.log('listening on *:3000');
+    res.send("hello world");
 });
 
 
-
-
-
-// var express = require('express');
-
-// var app = express();
-
-// var port = 5000
-
-// app.use(express.static('public'));
-// app.use(express.static('src/views'));
-
-// app.get('/', function(req, res){
-//     res.send("hello world");
-// });
-
-
-// app.get('/books', function(req, res){
-//     res.send("hello books");
-// });
-
-// app.listen(process.env.PORT || port, function(err){
-//     console.log('running server on port ' + port);
-// });
+app.listen(process.env.PORT || port, function(err){
+    console.log('running server on port ' + port);
+});
