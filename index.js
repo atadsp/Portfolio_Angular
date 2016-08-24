@@ -1,7 +1,26 @@
-var gzippo = require('gzippo');
+// var express = require('express');
+// var app = express();
+
+// var port = process.env.PORT || 3000;
+
+// app.use(express.static(__dirname + '/public'));
+
+// app.listen(port, function(){
+//  console.log('listening');
+// });
+
+
 var express = require('express');
-var app = express();
- 
-app.use(express.logger('dev'));
-app.use(gzippo.staticGzip(__dirname + "/public"));
-app.listen(process.env.PORT || 5000);
+var app		= express();
+var http	= require('http').Server(app);
+
+//Tell node where to find static files
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', function(req, res){
+	res.sendFile(__dirname + '/public/index.html');
+});
+
+http.listen(process.env.PORT || 3000, function(){
+	console.log('listening on *:3000');
+});
