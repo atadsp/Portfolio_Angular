@@ -12,5 +12,9 @@
   "dependencies": {
     "express": "^4.14.0",
     "lodash": "^4.15.0"
-  }
+  },
+    "engines": {
+        "node": "4.4.3",
+        "npm": "3.10.5"
+    } 
 }
