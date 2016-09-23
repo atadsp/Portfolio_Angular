@@ -1,0 +1,258 @@
+
+/* 
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+h1, h3{
+    color:#B3A002;
+}
+
+hr { width:100%; height:1px; background: #c4b326; }
+
+.footer_link{
+  padding:5px;
+}
+
+.header {
+    background-color: #0c147c;
+}
+
+.backup{
+    font-size: small;
+    text-align: center;
+}
+
+.push{
+  margin-bottom: 200px;
+}
+
+.mainimg .img-responsive {
+    margin: 0 auto;
+}
+
+.navlist{
+    color:#B3A002;
+}
+
+.navlist:hover{
+    background-color:#b36302;
+    color: #efd604;
+}
+
+.dropdown {
+    cursor:pointer;
+}
+
+
+.img-home-portfolio,
+.img-customer,
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.tab-pane {
+    margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+    padding: 50px 0;
+}
+
+.section-colored {
+    background-color: #0c147c;
+    /* change this to change the background color of a colored section */
+}
+
+
+.sidebar {
+    margin-top: 40px;
+}
+
+.sidebar ul {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #0c147c;
+}
+
+
+/* 404 Page Styles */
+.error-404 {
+    font-size: 8em;
+}
+
+
+/* Footer Styles */
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+
+    .carousel {
+        height: 70%;
+        /* increases the carousel height so it looks good on phones */
+    }
+}
+
+/* MP3 player styling */
+div.mp3_player{
+  width:510px; 
+  height:70px; 
+  background: #000;       
+  padding:5px;
+  margin:50px auto;
+}
+div.mp3_player > div > audio{
+  width:500px; 
+  background: #000;
+  float:left;
+}
+
+div.mp3_player > canvas {
+  width:500px;
+  height:30px; 
+  background:#002d3c;
+  float:left;
+}
+
+/* Ripped out the navigation from bootstrap to change the color */
+.navigation {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.navigation > li {
+  position: relative;
+  display: block;
+}
+.navigation > li > a {
+  position: relative;
+  display: block;
+  padding: 15px 20px;
+  font-sizelarge;
+}
+.navigation > li > a:hover,
+.navigation > li > a:focus {
+  text-decoration: none;
+  background-color: #b36302;
+}
+.navigation > li.disabled > a {
+  color: #efd604;
+}
+.navigation > li.disabled > a:hover,
+.navigation > li.disabled > a:focus {
+  color: #efd604;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+.navigation .open > a,
+.navigation .open > a:hover,
+.navigation .open > a:focus {
+  background-color: #b36302;
+  border-color: #337ab7;
+}
+.navigation > li > a > img {
+  max-width: none;
+}
+
+
+/* footer size*/
+
+.footer-basic-centered{
+  background-color: #0c147c;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+  text-align: center;
+  font: normal 18px sans-serif;
+  padding: 15px;
+  margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto{
+  color:  #efd604;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-basic-centered .footer-company-name{
+  color:  #efd604;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+  list-style: none;
+  font-weight: bold;
+  color:  #b36302;
+  padding: 15px 0 23px;
+  margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+  display:inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+  .footer-basic-centered{
+    padding: 35px;
+  }
+
+  .footer-basic-centered .footer-company-motto{
+    font-size: 18px;
+  }
+
+  .footer-basic-centered .footer-company-name{
+    font-size: 12px;
+  }
+
+  .footer-basic-centered .footer-links{
+    font-size: 14px;
+    padding: 25px 0 20px;
+  }
+
+  .footer-basic-centered .footer-links a{
+    line-height: 1.8;
+  }
+}
+
+/* contact form */
+    .bigicon {
+        font-size: 30px;
+        color: #0c147c;
+    }
+
+.well {
+  background-image: -webkit-linear-gradient(top, #f5e351 0%, #f5e351 100%);
+  background-image:      -o-linear-gradient(top, #f5e351 0%, #f5e351 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5e351), to(#f5e351));
+  background-image:         linear-gradient(to bottom, #f5e351 0%, #f5e351 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5e351', endColorstr='#fff5f5f5', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #dcdcdc;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05), 0 1px 0 rgba(255, 255, 255, .1);
+}
